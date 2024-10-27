@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software & Cyber Zone</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .carousel-item {
+    height: 500px; /* Set a fixed height for the carousel */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%; /* Fill the height of the carousel */
+    object-fit: cover; /* Maintain aspect ratio without stretching */
+}
+
+        .course {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+            transition: transform 0.2s;
+        }
+
+        .course:hover {
+            transform: scale(1.05);
+        }
+
+        .course img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            margin-top: 10px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Software & Cyber Zone</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#course1">3D Artist</a>
+                        <a class="dropdown-item" href="#course2">Cyber Security</a>
+                        <a class="dropdown-item" href="#course3">Digital Marketing</a>
+                        <a class="dropdown-item" href="#course4">Freelancing</a>
+                        <a class="dropdown-item" href="#course5">Graphics Designing</a>
+                        <a class="dropdown-item" href="#course6">Mobile App Development</a>
+                        <a class="dropdown-item" href="#course7">Python Programming</a>
+                        <a class="dropdown-item" href="#course8">Software Development</a>
+                        <a class="dropdown-item" href="#course9">Trading</a>
+                        <a class="dropdown-item" href="#course10">Video Training</a>
+                        <a class="dropdown-item" href="#course11">Web Development</a>
+                        <a class="dropdown-item" href="#course12">Office Management</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel Header -->
+    <header class="header">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="Yellow.jpg" alt="Slide 1" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="black.jpg" alt="Slide 2" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="white.jpg" alt="Slide 3" class="d-block w-100">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+    </header>
+
+    <!-- Courses Section -->
+    <div class="container">
+        <h2 class="my-4 text-center">A Wide Range of Digital Courses</h2>
+        <div class="row">
+            <!-- Course 1 -->
+            <div class="col-md-4" id="course1">
+                <div class="course">
+                    <img src="3d.jpg" alt="Course 1">
+                    <h4>3D Artist Course</h4>
+                    <p>This course covers the fundamentals of 3D Animation.</p>
+                    <a href="course1_catalog.html" class="btn btn-primary">View Catalog</a>
+                    <a href="course1_breakdown.html" class="btn btn-secondary">Day-wise Breakdown</a>
+                </div>
+            </div>
+            <!-- Course 2 -->
+            <div class="col-md-4" id="course2">
+                <div class="course">
+                    <img src="Cyber Sec.jpg" alt="Course 2">
+                    <h4>Cyber Security</h4>
+                    <p>This course focuses on Cyber Security using Kali Linux.</p>
+                    <a href="course2_catalog.html" class="btn btn-primary">View Catalog</a>
+                    <a href="course2_breakdown.html" class="btn btn-secondary">Day-wise Breakdown</a>
+                </div>
+            </div>
+            <!-- Course 3 -->
+            <div class="col-md-4" id="course3">
+                <div class="course">
+                    <img src="DigiMark.jpg" alt="Course 3">
+                    <h4>Digital Marketing</h4>
+                    <p>This course introduces Digital Marketing principles and software.</p>
+                    <a href="course3_catalog.html" class="btn btn-primary">View Catalog</a>
+                    <a href="course3_breakdown.html" class="btn btn-secondary">Day-wise Breakdown</a>
+                </div>
+            </div>
+            <!-- Course 4 -->
+            <div class="col-md-4" id="course4">
+                <div class="course">
+                    <img src="Freelancing.jpg" alt="Course 4">
+                    <h4>Freelancing Freedom</h4>
+                    <p>This course teaches Freelancing Techniques and Platforms.</p>
+                    <a href="course4_catalog.html" class="btn btn-primary">View Catalog</a>
+                    <a href="course4_breakdown.html" class="btn btn-secondary">Day-wise Breakdown</a>
+                </div>
+            </div>
+            <!-- Course 5 -->
+            <div class="col-md-4" id="course5">
+                <div class="course">
+                    <img src="gfx-01.jpg" alt="Course 5">
+                    <h4>Graphics Designing</h4>
+                    <p>This course covers Graphics Designing using Industry Standard Adobe Softwares.</p>
+                    <a href="course5_catalog.html" class="btn btn-primary">View Catalog</a>
+                    <a href="course5_breakdown.html" class="btn btn-secondary">Day-wise Breakdown</a>
+                </div>
+            </div>
+            <!-- Course 6 -->
+            <div class="col-md-4" id="course6">
+                <div class="course">
+                    <img src="mobile.jpg" alt="Course 6">
+                    <h4>Mobile App Development</h4>
+                    <p>This course teaches Mobile App Development and its impacts.</p>
+                    <a href="course6_catalog.html" class="btn btn-primary">View Catalog</a>
+                    <a href="course6_breakdown.html" class="btn btn-secondary">Day-wise Breakdown</a>
+                </div>
+            </div>
+            <!-- Course 7 -->
+            <div class="col-md-4" id="course7">
+                <div class="course">
+                    <img src="python.jpg" alt="Course 7">
+                    <h4>Python Programming</h4>
+                    <p>This course focuses on largely dominating language i.e Python.</p>
+                    <a href="course7_catalog.html" class="btn btn-primary">View Catalog</a>
+                    <a href="course7_breakdown.html" class="btn btn-secondary">Day-wise Breakdown</a>
+                </div>
+            </div>
+            <!-- Course 8 -->
+            <div class="col-md-4" id="course8">
+                <div class="course">
+                    <img src="software.jpg" alt="Course 8">
+                    <h4>Software Development</h4>
+                    <p>This course covers Softare Development strategies using in-market standards.</p>
+                    <a href="course8_catalog.html" class="btn btn-primary">View Catalog</a>
+                    <a href="course8_breakdown.html" class="btn btn-secondary">Day-wise Breakdown</a>
+                </div>
+            </div>
+            <!-- Course 9 -->
+            <div class="col-md-4" id="course9">
+                <div class="course">
+                    <img src="trading.jpg" alt="Course 9">
+                    <h4>Trading Strategies</h4>
+                    <p>This course teaches Trading Tactics and Techniques.</p>
+                    <a href="course9_catalog.html" class="btn btn-primary">View Catalog</a>
+                    <a href="course9_breakdown.html" class="btn btn-secondary">Day-wise Breakdown</a>
+                </div>
+            </div>
+            <!-- Course 10 -->
+            <div class="col-md-4" id="course10">
+                <div class="course">
+                    <img src="Video.jpg" alt="Course 10">
+                    <h4>Professional Video Editing</h4>
+                    <p>This course focuses on Professional Video Editing development fundamentals.</p>
+                    <a href="course10_catalog.html" class="btn btn-primary">View Catalog</a>
+                    <a href="course10_breakdown.html" class="btn btn-secondary">Day-wise Breakdown</a>
+                </div>
+            </div>
+            <!-- Course 11 -->
+            <div class="col-md-4" id="course11">
+                <div class="course">
+                    <img src="web2.jpg" alt="Course 11">
+                    <h4>Web Development</h4>
+                    <p>This course covers Web design principles.</p>
+                    <a href="course11_catalog.html" class="btn btn-primary">View Catalog</a>
+                    <a href="course11_breakdown.html" class="btn btn-secondary">Day-wise Breakdown</a>
+                </div>
+            </div>
+            <!-- Course 12 -->
+            <div class="col-md-4" id="course12">
+                <div class="course">
+                    <img src="office.jpg" alt="Course 12">
+                    <h4>Office Skills</h4>
+                    <p>This course teaches Office strategies and platforms.</p>
+                    <a href="course12_catalog.html" class="btn btn-primary">View Catalog</a>
+                    <a href="course12_breakdown.html" class="btn btn-secondary">Day-wise Breakdown</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Basics International Software & Cyber Zone. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
