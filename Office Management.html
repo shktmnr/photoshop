@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics International Software and Cyber Zone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+       
+
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .module {
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .module-header {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+        .day {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-top: 1px solid #ddd;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .day-content {
+            display: none;
+            padding: 15px;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+        }
+
+        /* Module Colors */
+        .intro-computers .module-header { background-color: #0078d4; }  /* Blue for Computer Basics */
+        .typing-skills .module-header { background-color: #0078d4; }
+        .ms-word .module-header { background-color: #2b579a; }         /* Blue for MS Word */
+        .ms-powerpoint .module-header { background-color: #d83b01; }    /* Orange for PowerPoint */
+        .ms-excel .module-header { background-color: #217346; }         /* Green for Excel */
+
+        /* Toggle Icon */
+        .day::after {
+            content: '\25BC';
+            float: right;
+            font-size: 1.2em;
+            transition: transform 0.3s;
+        }
+        .day.active::after {
+            transform: rotate(180deg);
+        }
+
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const days = document.querySelectorAll(".day");
+            days.forEach(day => {
+                day.addEventListener("click", () => {
+                    day.classList.toggle("active");
+                    const content = day.nextElementSibling;
+                    content.style.display = content.style.display === "block" ? "none" : "block";
+                });
+            });
+        });
+    </script>
+
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url('path/to/your/header-image.jpg'); /* Replace with your background image path */
+            background-size: cover;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .button-container {
+            margin-top: 20px; /* Space above buttons */
+            display: flex; /* Flex layout for buttons */
+            justify-content: center; /* Center buttons horizontally */
+        }
+        .button {
+            background-color: #007acc; /* Adobe Blue */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px; /* Margin around buttons */
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #005ea2; /* Darker blue on hover */
+        }
+        .data-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #007acc; /* Adobe Blue */
+            color: white;
+        }
+
+       /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .module {
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .module-header {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+        .module-content {
+            padding: 15px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .day {
+            background-color: #f1f1f1;
+            padding: 10px 15px;
+            border-top: 1px solid #ddd;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .day-content {
+            padding: 10px 15px;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+        }
+     body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #005f99;
+            text-align: center;
+        }
+        .week {
+            margin-bottom: 20px;
+        }
+        .week h2 {
+            color: #333;
+            border-bottom: 2px solid #005f99;
+            padding-bottom: 5px;
+        }
+        .day {
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #e6f7ff;
+            border-radius: 5px;
+            border-left: 4px solid #005f99;
+        }
+        .day span {
+            font-weight: bold;
+            color: #005f99;
+        }
+        /* Module Colors */
+        .intro-computers .module-header { background-color: #0078d4; }  /* Blue for Computer Basics */
+        .typing-skills .module-header { background-color: #0078d4; }
+        .ms-word .module-header { background-color: #2b579a; }         /* Dark Blue for MS Word */
+        .ms-powerpoint .module-header { background-color: #d83b01; }    /* Orange for PowerPoint */
+        .ms-excel .module-header { background-color: #217346; }         /* Green for Excel */
+   
+    </style>
+</head>
+<body>
+    <header>
+        <div class="mera">
+       
+<div class="header-content">
+        <img src="logo.png" alt="Logo" class="logo">
+        </div>
+     <p class="intro" style="color:white;">Basics International Software & Cyber Zone</p>
+<h1 style="color:#31A8FF;">Office Management Course</h1>
+            <p class="intro" style="color:white;">Complete Guide for Office Management Course</p>
+        </div>
+      	<body>
+    <header>
+       
+        <!-- Buttons placed at the bottom of the header -->
+        <div class="button-container">
+            <a href="catalog.html" class="button">Course Catalog</a>
+            <a href="index.html" class="button">Day-wise Breakdown</a>
+        </div>
+    </header>
+
+    </header>
+
+   
+</head>
+    <div class="container">
+        <h1>Office Management Course Outline</h1>
+        
+        <!-- Weeks 1-2: Computer Basics -->
+        <div class="week">
+            <h2> Computer Basics</h2>
+            <div class="day"><span>Lesson-01:</span> Introduction to Computers</div>
+            <div class="day"><span>Lesson-02:</span> Types of Computers and Components</div>
+            <div class="day"><span>Lesson-03:</span> Understanding Operating Systems</div>
+            <div class="day"><span>Lesson-04:</span> File Management Basics</div>
+            <div class="day"><span>Lesson-05:</span> Understanding Software vs. Hardware</div>
+            <div class="day"><span>Lesson-07:</span> Internet Basics</div>
+            
+        </div>
+
+        <!-- Weeks 3-4: Typing Skills -->
+        <div class="week">
+            <h2>Typing Skills</h2>
+            <div class="day"><span>Lesson-01:</span> Introduction to Typing</div>
+            <div class="day"><span>Lesson-02:</span> Home Row Keys and Typing Basics</div>
+            <div class="day"><span>Lesson-03:</span> Typing Practice and Posture</div>
+            <div class="day"><span>Lesson-04:</span> Speed and Accuracy Exercises</div>
+            <div class="day"><span>Lesson-05:</span> Intermediate Typing Skills</div>
+            <div class="day"><span>Lesson-06:</span> Typing Special Characters</div>
+            
+        </div>
+
+        <!-- Weeks 5-6: MS Word -->
+        <div class="week">
+            <h2>MS Word</h2>
+            <div class="day"><span>Lesson-01:</span> Introduction to MS Word</div>
+            <div class="day"><span>Lesson-02:</span> Basic Document Creation</div>
+            <div class="day"><span>Lesson-03:</span> Text Formatting Techniques</div>
+            <div class="day"><span>Lesson-04:</span> Paragraph and Page Layout</div>
+            <div class="day"><span>Lesson-05:</span> Working with Tables</div>
+            <div class="day"><span>Lesson-06:</span> Adding and Formatting Images</div>
+            <div class="day"><span>Lesson-07:</span> Headers, Footers, and Page Numbers</div>
+            <div class="day"><span>Lesson-08:</span> Using Templates and Styles</div>
+            <div class="day"><span>Lesson-09:</span> Adding References and Citations</div>
+            <div class="day"><span>Lesson-10:</span> Reviewing and Collaborating</div>
+            <div class="day"><span>Lesson-11:</span> Document Formatting Review</div>
+            <div class="day"><span>Lesson-12:</span> Working with Long Documents</div>
+            <div class="day"><span>Lesson-13:</span> Weekly Review</div>
+            <div class="day"><span>Lesson-14:</span> MS Word Assessment</div>
+        </div>
+
+        <!-- Weeks 7-8: MS PowerPoint -->
+        <div class="week">
+            <h2>MS PowerPoint</h2>
+            <div class="day"><span>Lesson-01:</span> Introduction to MS PowerPoint</div>
+            <div class="day"><span>Lesson-02:</span> Creating a Basic Presentation</div>
+            <div class="day"><span>Lesson-03:</span> Slide Layouts and Design Principles</div>
+            <div class="day"><span>Lesson-04:</span> Adding Text and Graphics</div>
+            <div class="day"><span>Lesson-05:</span> Transitions and Animations</div>
+            <div class="day"><span>Lesson-06:</span> Working with Charts and Graphs</div>
+            <div class="day"><span>Lesson-07:</span> Adding Multimedia Elements</div>
+            <div class="day"><span>Lesson-08:</span> Collaborative Editing</div>
+            <div class="day"><span>Lesson-09:</span> Slideshow Settings and Tips</div>
+            <div class="day"><span>Lesson-10:</span> Preparing for Presentations</div>
+            <div class="day"><span>Lesson-11:</span> Final Touches and Review</div>
+            <div class="day"><span>Lesson-12:</span> Weekly Review</div>
+            <div class="day"><span>Lesson-13:</span> Presentation Practice</div>
+            <div class="day"><span>Lesson-14:</span> MS PowerPoint Assessment</div>
+        </div>
+<!-- Weeks 9-12: MS Excel -->
+<div class="week">
+    <h2>MS Excel</h2>
+    <div class="day"><span>Lesson-01:</span> Introduction to MS Excel</div>
+    <div class="day"><span>Lesson-02:</span> Spreadsheet Navigation</div>
+    <div class="day"><span>Lesson-03:</span> Cell Formatting Basics</div>
+    <div class="day"><span>Lesson-04:</span> Working with Simple Formulas</div>
+    <div class="day"><span>Lesson-05:</span> Using Basic Functions</div>
+    <div class="day"><span>Lesson-06:</span> Data Sorting and Filtering</div>
+    <div class="day"><span>Lesson-07:</span> Creating and Formatting Charts</div>
+    <div class="day"><span>Lesson-08:</span> Conditional Formatting</div>
+    <div class="day"><span>Lesson-09:</span> Introduction to Pivot Tables</div>
+    <div class="day"><span>Lesson-10:</span> Advanced Formulas and Functions</div>
+    <div class="day"><span>Lesson-11:</span> Data Validation</div>
+    <div class="day"><span>Lesson-12:</span> Workbook Protection and Sharing</div>
+    <div class="day"><span>Lesson-13:</span> Data Analysis Tools in Excel</div>
+    <div class="day"><span>Lesson-14:</span> Practical Exercises with Real-world Data</div>
+    <div class="day"><span>Lesson-15:</span> Financial Functions and Applications</div>
+    <div class="day"><span>Lesson-16:</span> Advanced Charting Techniques</div>
+    <div class="day"><span>Lesson-17:</span> Macros and Automation Basics</div>
+    <div class="day"><span>Lesson-18:</span> Collaborative Tools and Comments</div>
+    <div class="day"><span>Lesson-19:</span> Weekly Review and Q&A</div>
+    <div class="day"><span>Lesson-20:</span> Excel Project Setup</div>
+    <div class="day"><span>Lesson-21:</span> Formulas</div>
+    <div class="day"><span>Lesson-22:</span> Formulas</div>
+    <div class="day"><span>Lesson-23:</span> Formulas</div>
+    <div class="day"><span>Lesson-24:</span> Formulas</div>
+</div>
+
+
+<div class="week">
+    <h2>Top 50 Excel Formulas</h2>
+    
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 50 Excel Formulas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #005f99;
+            text-align: center;
+        }
+        .formula {
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #e6f7ff;
+            border-radius: 5px;
+            border-left: 4px solid #005f99;
+        }
+        .formula span {
+            font-weight: bold;
+            color: #005f99;
+        }
+    </style>
+</head>
+           
+        <div class="formula"><span>1. SUM:</span> =SUM(A1:A10)</div>
+        <div class="formula"><span>2. AVERAGE:</span> =AVERAGE(B1:B10)</div>
+        <div class="formula"><span>3. COUNT:</span> =COUNT(C1:C10)</div>
+        <div class="formula"><span>4. COUNTA:</span> =COUNTA(D1:D10)</div>
+        <div class="formula"><span>5. COUNTIF:</span> =COUNTIF(E1:E10, "criteria")</div>
+        <div class="formula"><span>6. IF:</span> =IF(A1 > 100, "Yes", "No")</div>
+        <div class="formula"><span>7. SUMIF:</span> =SUMIF(F1:F10, "criteria", G1:G10)</div>
+        <div class="formula"><span>8. VLOOKUP:</span> =VLOOKUP(H1, A1:D10, 2, FALSE)</div>
+        <div class="formula"><span>9. HLOOKUP:</span> =HLOOKUP(I1, A1:D10, 2, FALSE)</div>
+        <div class="formula"><span>10. MATCH:</span> =MATCH(J1, A1:A10, 0)</div>
+        <div class="formula"><span>11. INDEX:</span> =INDEX(A1:C10, 3, 2)</div>
+        <div class="formula"><span>12. CONCATENATE:</span> =CONCATENATE("Hello", " ", "World")</div>
+        <div class="formula"><span>13. LEFT:</span> =LEFT(A1, 5)</div>
+        <div class="formula"><span>14. RIGHT:</span> =RIGHT(A1, 5)</div>
+        <div class="formula"><span>15. MID:</span> =MID(A1, 3, 5)</div>
+        <div class="formula"><span>16. LEN:</span> =LEN(A1)</div>
+        <div class="formula"><span>17. FIND:</span> =FIND("text", A1)</div>
+        <div class="formula"><span>18. SEARCH:</span> =SEARCH("text", A1)</div>
+        <div class="formula"><span>19. REPLACE:</span> =REPLACE(A1, 1, 3, "New")</div>
+        <div class="formula"><span>20. SUBSTITUTE:</span> =SUBSTITUTE(A1, "old", "new")</div>
+        <div class="formula"><span>21. TRIM:</span> =TRIM(A1)</div>
+        <div class="formula"><span>22. UPPER:</span> =UPPER(A1)</div>
+        <div class="formula"><span>23. LOWER:</span> =LOWER(A1)</div>
+        <div class="formula"><span>24. PROPER:</span> =PROPER(A1)</div>
+        <div class="formula"><span>25. ROUND:</span> =ROUND(A1, 2)</div>
+        <div class="formula"><span>26. ROUNDDOWN:</span> =ROUNDDOWN(A1, 2)</div>
+        <div class="formula"><span>27. ROUNDUP:</span> =ROUNDUP(A1, 2)</div>
+        <div class="formula"><span>28. INT:</span> =INT(A1)</div>
+        <div class="formula"><span>29. ABS:</span> =ABS(A1)</div>
+        <div class="formula"><span>30. POWER:</span> =POWER(A1, 3)</div>
+        <div class="formula"><span>31. SQRT:</span> =SQRT(A1)</div>
+        <div class="formula"><span>32. TODAY:</span> =TODAY()</div>
+        <div class="formula"><span>33. NOW:</span> =NOW()</div>
+        <div class="formula"><span>34. DAY:</span> =DAY(A1)</div>
+        <div class="formula"><span>35. MONTH:</span> =MONTH(A1)</div>
+        <div class="formula"><span>36. YEAR:</span> =YEAR(A1)</div>
+        <div class="formula"><span>37. HOUR:</span> =HOUR(A1)</div>
+        <div class="formula"><span>38. MINUTE:</span> =MINUTE(A1)</div>
+        <div class="formula"><span>39. SECOND:</span> =SECOND(A1)</div>
+        <div class="formula"><span>40. DATEDIF:</span> =DATEDIF(A1, B1, "d")</div>
+        <div class="formula"><span>41. EOMONTH:</span> =EOMONTH(A1, 1)</div>
+        <div class="formula"><span>42. WORKDAY:</span> =WORKDAY(A1, 5)</div>
+        <div class="formula"><span>43. NETWORKDAYS:</span> =NETWORKDAYS(A1, B1)</div>
+        <div class="formula"><span>44. TEXT:</span> =TEXT(A1, "dd/mm/yyyy")</div>
+        <div class="formula"><span>45. CHOOSE:</span> =CHOOSE(2, "A", "B", "C")</div>
+        <div class="formula"><span>46. ISERROR:</span> =ISERROR(A1/B1)</div>
+        <div class="formula"><span>47. ISBLANK:</span> =ISBLANK(A1)</div>
+        <div class="formula"><span>48. INDIRECT:</span> =INDIRECT("A" & B1)</div>
+        <div class="formula"><span>49. ROW:</span> =ROW(A1)</div>
+        <div class="formula"><span>50. COLUMN:</span> =COLUMN(A1)</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Basics International Software and Cyber Zone. All Rights Reserved.</p>
+<p>In Case of any Query, dial : 03227826078 (Shaukat Munir)</p>
+        </div>
+    </footer>
+</body>
+</html>
